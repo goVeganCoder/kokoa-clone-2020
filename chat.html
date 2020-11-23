@@ -4,9 +4,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Kokoa Clone</title>
+    <title>Chat w/ Yorki - Kokoa Clone</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -22,80 +22,57 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
-        <span><i class="fas fa-search"></i></span>
-        <span><i class="fas fa-comment-dots"></i></span>
-        <span><i class="fas fa-music"></i></span>
-        <span><i class="fas fa-cog"></i></span>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Yorki</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
       </div>
     </header>
 
-    <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://www.thesprucepets.com/thmb/yxzBJOnfiOC_gDEsPrpQrMzXMOQ=/1977x1112/smart/filters:no_upscale()/Yorkshireterrier-GettyImages-156849944-bb62e53e371d4c719c6ceb29af9796da.jpg"
-            class="user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Kokoa Talk</h4>
-            <h6 class="user-component__subtitle">
-              Please check My Kokoa Account Info
-            </h6>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 20, 2020</div>
+      <div class="message-row">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/2/2b/WelshCorgi.jpeg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Corgi</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi</span>
+            <span class="message__time">21:72</span>
           </div>
-        </div>
-        <div class="user-component__column">
-          <div class="user-component__time">21:22</div>
-          <div class="badge">1</div>
         </div>
       </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://www.thesprucepets.com/thmb/yxzBJOnfiOC_gDEsPrpQrMzXMOQ=/1977x1112/smart/filters:no_upscale()/Yorkshireterrier-GettyImages-156849944-bb62e53e371d4c719c6ceb29af9796da.jpg"
-            class="user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Yorki3</h4>
-            <h6 class="user-component__subtitle">What?</h6>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hello :)</span>
+            <span class="message__time">21:72</span>
           </div>
-        </div>
-        <div class="user-component__column">
-          <div class="user-component__time">21:30</div>
-          <div class="badge">5</div>
         </div>
       </div>
     </main>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <i class="far fa-user fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__link">
-          <span class="nav_notification badge">1</span>
-          <a class="nav__a" href="chat.html"
-            ><i class="fas fa-comment fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__link">
-          <a class="nav__a" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__link">
-          <span class="nav_small_notification badge-small"></span>
-          <a class="nav__a" href="more.html"
-            ><i class="fas fa-ellipsis-h fa-2x"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
-
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Wrtie a message..." />
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
